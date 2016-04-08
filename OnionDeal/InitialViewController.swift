@@ -13,7 +13,7 @@ class InitialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // TEST 123 TEST MICHAL SIEMANDERO ELO MICHAL NIE PIJ TEJ COLI
     }
 
 }
