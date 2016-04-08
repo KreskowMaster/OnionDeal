@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0877999D1CB8411900E10135 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0877999C1CB8411900E10135 /* AppDelegate.swift */; };
+		087799A21CB8411900E10135 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 087799A01CB8411900E10135 /* Main.storyboard */; };
+		087799A51CB8411A00E10135 /* OnionDeal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 087799A31CB8411A00E10135 /* OnionDeal.xcdatamodeld */; };
+		087799A71CB8411A00E10135 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087799A61CB8411A00E10135 /* Assets.xcassets */; };
+		087799AA1CB8411A00E10135 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 087799A81CB8411A00E10135 /* LaunchScreen.storyboard */; };
+		087799B51CB8411A00E10135 /* OnionDealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087799B41CB8411A00E10135 /* OnionDealTests.swift */; };
+		087799C01CB8411A00E10135 /* OnionDealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087799BF1CB8411A00E10135 /* OnionDealUITests.swift */; };
+		087799CE1CB8447A00E10135 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087799CD1CB8447A00E10135 /* InitialViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		087799B11CB8411A00E10135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 087799911CB8411900E10135 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 087799981CB8411900E10135;
+			remoteInfo = OnionDeal;
+		};
+		087799BC1CB8411A00E10135 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 087799911CB8411900E10135 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 087799981CB8411900E10135;
+			remoteInfo = OnionDeal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		087799991CB8411900E10135 /* OnionDeal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnionDeal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0877999C1CB8411900E10135 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		087799A11CB8411900E10135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		087799A41CB8411A00E10135 /* OnionDeal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OnionDeal.xcdatamodel; sourceTree = "<group>"; };
+		087799A61CB8411A00E10135 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		087799A91CB8411A00E10135 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		087799AB1CB8411A00E10135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		087799B01CB8411A00E10135 /* OnionDealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnionDealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		087799B41CB8411A00E10135 /* OnionDealTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnionDealTests.swift; sourceTree = "<group>"; };
+		087799B61CB8411A00E10135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		087799BB1CB8411A00E10135 /* OnionDealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnionDealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		087799BF1CB8411A00E10135 /* OnionDealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnionDealUITests.swift; sourceTree = "<group>"; };
+		087799C11CB8411A00E10135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		087799CD1CB8447A00E10135 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		087799961CB8411900E10135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087799AD1CB8411A00E10135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087799B81CB8411A00E10135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		087799901CB8411900E10135 = {
+			isa = PBXGroup;
+			children = (
+				0877999B1CB8411900E10135 /* OnionDeal */,
+				0877999A1CB8411900E10135 /* Products */,
+				087799BE1CB8411A00E10135 /* OnionDealUITests */,
+				087799B31CB8411A00E10135 /* OnionDealTests */,
+			);
+			sourceTree = "<group>";
+		};
+		0877999A1CB8411900E10135 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				087799991CB8411900E10135 /* OnionDeal.app */,
+				087799B01CB8411A00E10135 /* OnionDealTests.xctest */,
+				087799BB1CB8411A00E10135 /* OnionDealUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0877999B1CB8411900E10135 /* OnionDeal */ = {
+			isa = PBXGroup;
+			children = (
+				0877999C1CB8411900E10135 /* AppDelegate.swift */,
+				087799A01CB8411900E10135 /* Main.storyboard */,
+				087799CD1CB8447A00E10135 /* InitialViewController.swift */,
+				087799A61CB8411A00E10135 /* Assets.xcassets */,
+				087799A81CB8411A00E10135 /* LaunchScreen.storyboard */,
+				087799AB1CB8411A00E10135 /* Info.plist */,
+				087799A31CB8411A00E10135 /* OnionDeal.xcdatamodeld */,
+			);
+			path = OnionDeal;
+			sourceTree = "<group>";
+		};
+		087799B31CB8411A00E10135 /* OnionDealTests */ = {
+			isa = PBXGroup;
+			children = (
+				087799B41CB8411A00E10135 /* OnionDealTests.swift */,
+				087799B61CB8411A00E10135 /* Info.plist */,
+			);
+			path = OnionDealTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		087799BE1CB8411A00E10135 /* OnionDealUITests */ = {
+			isa = PBXGroup;
+			children = (
+				087799BF1CB8411A00E10135 /* OnionDealUITests.swift */,
+				087799C11CB8411A00E10135 /* Info.plist */,
+			);
+			path = OnionDealUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		087799981CB8411900E10135 /* OnionDeal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 087799C41CB8411A00E10135 /* Build configuration list for PBXNativeTarget "OnionDeal" */;
+			buildPhases = (
+				087799951CB8411900E10135 /* Sources */,
+				087799961CB8411900E10135 /* Frameworks */,
+				087799971CB8411900E10135 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OnionDeal;
+			productName = OnionDeal;
+			productReference = 087799991CB8411900E10135 /* OnionDeal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		087799AF1CB8411A00E10135 /* OnionDealTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 087799C71CB8411A00E10135 /* Build configuration list for PBXNativeTarget "OnionDealTests" */;
+			buildPhases = (
+				087799AC1CB8411A00E10135 /* Sources */,
+				087799AD1CB8411A00E10135 /* Frameworks */,
+				087799AE1CB8411A00E10135 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				087799B21CB8411A00E10135 /* PBXTargetDependency */,
+			);
+			name = OnionDealTests;
+			productName = OnionDealTests;
+			productReference = 087799B01CB8411A00E10135 /* OnionDealTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		087799BA1CB8411A00E10135 /* OnionDealUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 087799CA1CB8411A00E10135 /* Build configuration list for PBXNativeTarget "OnionDealUITests" */;
+			buildPhases = (
+				087799B71CB8411A00E10135 /* Sources */,
+				087799B81CB8411A00E10135 /* Frameworks */,
+				087799B91CB8411A00E10135 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				087799BD1CB8411A00E10135 /* PBXTargetDependency */,
+			);
+			name = OnionDealUITests;
+			productName = OnionDealUITests;
+			productReference = 087799BB1CB8411A00E10135 /* OnionDealUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		087799911CB8411900E10135 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = OnionDealDevs;
+				TargetAttributes = {
+					087799981CB8411900E10135 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8KU3R66NZ4;
+					};
+					087799AF1CB8411A00E10135 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8KU3R66NZ4;
+						TestTargetID = 087799981CB8411900E10135;
+					};
+					087799BA1CB8411A00E10135 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 8KU3R66NZ4;
+						TestTargetID = 087799981CB8411900E10135;
+					};
+				};
+			};
+			buildConfigurationList = 087799941CB8411900E10135 /* Build configuration list for PBXProject "OnionDeal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 087799901CB8411900E10135;
+			productRefGroup = 0877999A1CB8411900E10135 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				087799981CB8411900E10135 /* OnionDeal */,
+				087799AF1CB8411A00E10135 /* OnionDealTests */,
+				087799BA1CB8411A00E10135 /* OnionDealUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		087799971CB8411900E10135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087799AA1CB8411A00E10135 /* LaunchScreen.storyboard in Resources */,
+				087799A71CB8411A00E10135 /* Assets.xcassets in Resources */,
+				087799A21CB8411900E10135 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087799AE1CB8411A00E10135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087799B91CB8411A00E10135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		087799951CB8411900E10135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087799CE1CB8447A00E10135 /* InitialViewController.swift in Sources */,
+				087799A51CB8411A00E10135 /* OnionDeal.xcdatamodeld in Sources */,
+				0877999D1CB8411900E10135 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087799AC1CB8411A00E10135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087799B51CB8411A00E10135 /* OnionDealTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		087799B71CB8411A00E10135 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				087799C01CB8411A00E10135 /* OnionDealUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		087799B21CB8411A00E10135 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 087799981CB8411900E10135 /* OnionDeal */;
+			targetProxy = 087799B11CB8411A00E10135 /* PBXContainerItemProxy */;
+		};
+		087799BD1CB8411A00E10135 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 087799981CB8411900E10135 /* OnionDeal */;
+			targetProxy = 087799BC1CB8411A00E10135 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		087799A01CB8411900E10135 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				087799A11CB8411900E10135 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		087799A81CB8411A00E10135 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				087799A91CB8411A00E10135 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		087799C21CB8411A00E10135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		087799C31CB8411A00E10135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		087799C51CB8411A00E10135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OnionDeal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oniondealdevs.OnionDeal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		087799C61CB8411A00E10135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = OnionDeal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oniondealdevs.OnionDeal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		087799C81CB8411A00E10135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OnionDealTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oniondealdevs.OnionDealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnionDeal.app/OnionDeal";
+			};
+			name = Debug;
+		};
+		087799C91CB8411A00E10135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = OnionDealTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oniondealdevs.OnionDealTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OnionDeal.app/OnionDeal";
+			};
+			name = Release;
+		};
+		087799CB1CB8411A00E10135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OnionDealUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oniondealdevs.OnionDealUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OnionDeal;
+			};
+			name = Debug;
+		};
+		087799CC1CB8411A00E10135 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = OnionDealUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.oniondealdevs.OnionDealUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = OnionDeal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		087799941CB8411900E10135 /* Build configuration list for PBXProject "OnionDeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087799C21CB8411A00E10135 /* Debug */,
+				087799C31CB8411A00E10135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		087799C41CB8411A00E10135 /* Build configuration list for PBXNativeTarget "OnionDeal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087799C51CB8411A00E10135 /* Debug */,
+				087799C61CB8411A00E10135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		087799C71CB8411A00E10135 /* Build configuration list for PBXNativeTarget "OnionDealTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087799C81CB8411A00E10135 /* Debug */,
+				087799C91CB8411A00E10135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		087799CA1CB8411A00E10135 /* Build configuration list for PBXNativeTarget "OnionDealUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				087799CB1CB8411A00E10135 /* Debug */,
+				087799CC1CB8411A00E10135 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		087799A31CB8411A00E10135 /* OnionDeal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				087799A41CB8411A00E10135 /* OnionDeal.xcdatamodel */,
+			);
+			currentVersion = 087799A41CB8411A00E10135 /* OnionDeal.xcdatamodel */;
+			path = OnionDeal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 087799911CB8411900E10135 /* Project object */;
+}
