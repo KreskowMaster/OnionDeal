@@ -23,7 +23,7 @@
 		F2152E3C1CB93DF600B521EE /* CurrencyUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E3B1CB93DF600B521EE /* CurrencyUtil.swift */; };
 		F2152E3E1CB9447800B521EE /* FakeDealsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E3D1CB9447800B521EE /* FakeDealsDatabase.swift */; };
 		F2152E451CB979F600B521EE /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E441CB979F600B521EE /* ProductsViewController.swift */; };
-		F2152E471CB97A2300B521EE /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E461CB97A2300B521EE /* AddProductViewController.swift */; };
+		F2152E471CB97A2300B521EE /* EditProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E461CB97A2300B521EE /* EditProductViewController.swift */; };
 		F2152E4A1CB97C8B00B521EE /* Management.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2152E481CB97C8B00B521EE /* Management.storyboard */; };
 		F2152E4D1CB97F8E00B521EE /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E4C1CB97F8E00B521EE /* ProductCell.swift */; };
 /* End PBXBuildFile section */
@@ -68,7 +68,7 @@
 		F2152E3B1CB93DF600B521EE /* CurrencyUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyUtil.swift; sourceTree = "<group>"; };
 		F2152E3D1CB9447800B521EE /* FakeDealsDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeDealsDatabase.swift; sourceTree = "<group>"; };
 		F2152E441CB979F600B521EE /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
-		F2152E461CB97A2300B521EE /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		F2152E461CB97A2300B521EE /* EditProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProductViewController.swift; sourceTree = "<group>"; };
 		F2152E491CB97C8B00B521EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Management.storyboard; sourceTree = "<group>"; };
 		F2152E4C1CB97F8E00B521EE /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -236,7 +236,7 @@
 			children = (
 				F2152E4B1CB97F7400B521EE /* Cell */,
 				F2152E441CB979F600B521EE /* ProductsViewController.swift */,
-				F2152E461CB97A2300B521EE /* AddProductViewController.swift */,
+				F2152E461CB97A2300B521EE /* EditProductViewController.swift */,
 			);
 			name = Management;
 			sourceTree = "<group>";
@@ -386,7 +386,7 @@
 			files = (
 				087799CE1CB8447A00E10135 /* InitialViewController.swift in Sources */,
 				F2152E381CB93D5200B521EE /* MBAmountLabel.swift in Sources */,
-				F2152E471CB97A2300B521EE /* AddProductViewController.swift in Sources */,
+				F2152E471CB97A2300B521EE /* EditProductViewController.swift in Sources */,
 				087799A51CB8411A00E10135 /* OnionDeal.xcdatamodeld in Sources */,
 				F2152E4D1CB97F8E00B521EE /* ProductCell.swift in Sources */,
 				F2152E3E1CB9447800B521EE /* FakeDealsDatabase.swift in Sources */,

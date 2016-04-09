@@ -8,6 +8,6 @@
 
 import UIKit
 
-class AddProductViewController : UIViewController {
+class EditProductViewController : UITableViewController {
     
 }
