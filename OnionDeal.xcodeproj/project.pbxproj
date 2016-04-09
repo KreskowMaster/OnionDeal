@@ -22,6 +22,8 @@
 		F2152E381CB93D5200B521EE /* MBAmountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E371CB93D5200B521EE /* MBAmountLabel.swift */; };
 		F2152E3C1CB93DF600B521EE /* CurrencyUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E3B1CB93DF600B521EE /* CurrencyUtil.swift */; };
 		F2152E3E1CB9447800B521EE /* FakeDealsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E3D1CB9447800B521EE /* FakeDealsDatabase.swift */; };
+		F2152E451CB979F600B521EE /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E441CB979F600B521EE /* ProductsViewController.swift */; };
+		F2152E471CB97A2300B521EE /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E461CB97A2300B521EE /* AddProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		F2152E371CB93D5200B521EE /* MBAmountLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBAmountLabel.swift; sourceTree = "<group>"; };
 		F2152E3B1CB93DF600B521EE /* CurrencyUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyUtil.swift; sourceTree = "<group>"; };
 		F2152E3D1CB9447800B521EE /* FakeDealsDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeDealsDatabase.swift; sourceTree = "<group>"; };
+		F2152E441CB979F600B521EE /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		F2152E461CB97A2300B521EE /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		08E253C41CB900DD009ECBD0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F2152E431CB979E200B521EE /* Management */,
 				08E253CD1CB90B4D009ECBD0 /* Initial */,
 				08E253C71CB90774009ECBD0 /* Stock */,
 			);
@@ -219,6 +224,15 @@
 				F2152E3B1CB93DF600B521EE /* CurrencyUtil.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		F2152E431CB979E200B521EE /* Management */ = {
+			isa = PBXGroup;
+			children = (
+				F2152E441CB979F600B521EE /* ProductsViewController.swift */,
+				F2152E461CB97A2300B521EE /* AddProductViewController.swift */,
+			);
+			name = Management;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,8 +371,10 @@
 			files = (
 				087799CE1CB8447A00E10135 /* InitialViewController.swift in Sources */,
 				F2152E381CB93D5200B521EE /* MBAmountLabel.swift in Sources */,
+				F2152E471CB97A2300B521EE /* AddProductViewController.swift in Sources */,
 				087799A51CB8411A00E10135 /* OnionDeal.xcdatamodeld in Sources */,
 				F2152E3E1CB9447800B521EE /* FakeDealsDatabase.swift in Sources */,
+				F2152E451CB979F600B521EE /* ProductsViewController.swift in Sources */,
 				F2152E3C1CB93DF600B521EE /* CurrencyUtil.swift in Sources */,
 				0877999D1CB8411900E10135 /* AppDelegate.swift in Sources */,
 				08E253CA1CB90791009ECBD0 /* DealCell.swift in Sources */,
