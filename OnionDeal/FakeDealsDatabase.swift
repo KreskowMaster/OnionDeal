@@ -30,7 +30,6 @@ class FakeDealsDatabase {
         deal1.photo = UIImageJPEGRepresentation(UIImage(), 1.0)
         deal1.expireDate = NSDate()
         deal1.priceBefore = 10.00
-        deal1.priceAfter = 5.00
         deal1.shop = "Biedronka"
         
         let deal2 = NSEntityDescription.insertNewObjectForEntityForName("Deal", inManagedObjectContext: context) as! Deal
@@ -39,7 +38,6 @@ class FakeDealsDatabase {
         deal2.photo = UIImageJPEGRepresentation(UIImage(), 1.0)
         deal2.expireDate = NSDate()
         deal2.priceBefore = 9.00
-        deal2.priceAfter = 7.00
         deal2.shop = "Biedronka"
         
         let deal3 = NSEntityDescription.insertNewObjectForEntityForName("Deal", inManagedObjectContext: context) as! Deal
@@ -47,26 +45,23 @@ class FakeDealsDatabase {
         deal3.price = 10.0
         deal3.photo = UIImageJPEGRepresentation(UIImage(), 1.0)
         deal3.expireDate = NSDate()
-        deal3.priceBefore = 5.00
-        deal3.priceAfter = 3.00
+        deal3.priceBefore = 15.00
         deal3.shop = "Lidl"
         
         let deal4 = NSEntityDescription.insertNewObjectForEntityForName("Deal", inManagedObjectContext: context) as! Deal
         deal4.name = "Mandarine"
-        deal4.price = 10.0
+        deal4.price = 3.0
         deal4.photo = UIImageJPEGRepresentation(UIImage(), 1.0)
         deal4.expireDate = NSDate()
-        deal4.priceBefore = 2.00
-        deal4.priceAfter = 1.00
+        deal4.priceBefore = 12.00
         deal4.shop = "Tesco"
         
         let deal5 = NSEntityDescription.insertNewObjectForEntityForName("Deal", inManagedObjectContext: context) as! Deal
         deal5.name = "7 Days Crossaint"
-        deal5.price = 10.0
+        deal5.price = 2.0
         deal5.photo = UIImageJPEGRepresentation(UIImage(), 1.0)
         deal5.expireDate = NSDate()
         deal5.priceBefore = 7.00
-        deal5.priceAfter = 4.00
         deal5.shop = "Lidl"
         
         try! context.save()

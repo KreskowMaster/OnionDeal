@@ -18,7 +18,6 @@ extension Deal {
     @NSManaged var price: NSNumber?
     @NSManaged var photo: NSData?
     @NSManaged var expireDate: NSDate?
-    @NSManaged var priceAfter: NSNumber?
     @NSManaged var priceBefore: NSNumber?
     @NSManaged var shop: String?
 

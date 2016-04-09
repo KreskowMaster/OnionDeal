@@ -13,7 +13,7 @@ import CoreData
 class Deal: NSManagedObject {
     
     var calculatedDiscount : Int {
-        return ((Int(priceBefore!) - Int(priceAfter!)) / Int(priceBefore!)) * 100
+        return Int((priceBefore!.doubleValue - price!.doubleValue) / priceBefore!.doubleValue * 100)
     }
 
     static func getAllDeals() -> [Deal]? {
@@ -24,7 +24,7 @@ class Deal: NSManagedObject {
         return (results as? [Deal])
     }
     
-    static func addDeal(name : String, price : Float, photo : UIImage, expireDate : NSDate, priceBefore : Float, priceAfter : Float, shop : String) {
+    static func addDeal(name : String, price : Float, photo : UIImage, expireDate : NSDate, priceBefore : Float, shop : String) {
         let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         let newDeal = NSEntityDescription.insertNewObjectForEntityForName("Deal", inManagedObjectContext: context) as! Deal
         newDeal.name = name
@@ -32,7 +32,6 @@ class Deal: NSManagedObject {
         newDeal.photo = UIImagePNGRepresentation(photo)
         newDeal.expireDate = expireDate
         newDeal.priceBefore = priceBefore
-        newDeal.priceAfter = priceAfter
         newDeal.shop = shop
         
         try! context.save()
