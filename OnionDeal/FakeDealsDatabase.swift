@@ -31,6 +31,7 @@ class FakeDealsDatabase {
         deal1.expireDate = NSDate()
         deal1.priceBefore = 10.00
         deal1.shop = "Biedronka"
+        deal1.quantity = 100
         
         let deal2 = NSEntityDescription.insertNewObjectForEntityForName("Deal", inManagedObjectContext: context) as! Deal
         deal2.name = "Chocolate Milka Oreo"
@@ -39,6 +40,7 @@ class FakeDealsDatabase {
         deal2.expireDate = NSDate()
         deal2.priceBefore = 9.00
         deal2.shop = "Biedronka"
+        deal2.quantity = 87
         
         let deal3 = NSEntityDescription.insertNewObjectForEntityForName("Deal", inManagedObjectContext: context) as! Deal
         deal3.name = "Bean"
@@ -47,6 +49,7 @@ class FakeDealsDatabase {
         deal3.expireDate = NSDate()
         deal3.priceBefore = 15.00
         deal3.shop = "Lidl"
+        deal3.quantity = 250
         
         let deal4 = NSEntityDescription.insertNewObjectForEntityForName("Deal", inManagedObjectContext: context) as! Deal
         deal4.name = "Orange"
@@ -55,6 +58,7 @@ class FakeDealsDatabase {
         deal4.expireDate = NSDate()
         deal4.priceBefore = 12.00
         deal4.shop = "Tesco"
+        deal4.quantity = 420
         
         let deal5 = NSEntityDescription.insertNewObjectForEntityForName("Deal", inManagedObjectContext: context) as! Deal
         deal5.name = "7 Days Crossaint"
@@ -63,6 +67,7 @@ class FakeDealsDatabase {
         deal5.expireDate = NSDate()
         deal5.priceBefore = 7.00
         deal5.shop = "Lidl"
+        deal5.quantity = 310
         
         try! context.save()
     }

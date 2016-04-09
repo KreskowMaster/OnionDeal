@@ -60,5 +60,4 @@ extension FoodStockViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print()
     }
-
 }

@@ -2,7 +2,7 @@
 //  Deal+CoreDataProperties.swift
 //  OnionDeal
 //
-//  Created by Krystian Gontarek on 09.04.2016.
+//  Created by Thorsten Klusemann on 09.04.16.
 //  Copyright © 2016 OnionDealDevs. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -14,11 +14,13 @@ import CoreData
 
 extension Deal {
 
-    @NSManaged var name: String?
-    @NSManaged var price: NSNumber?
-    @NSManaged var photo: NSData?
     @NSManaged var expireDate: NSDate?
+    @NSManaged var name: String?
+    @NSManaged var photo: NSData?
+    @NSManaged var price: NSNumber?
     @NSManaged var priceBefore: NSNumber?
     @NSManaged var shop: String?
+    @NSManaged var finishedCount: NSNumber?
+    @NSManaged var quantity: NSNumber?
 
 }

@@ -23,4 +23,7 @@ class DealCell : UITableViewCell {
     @IBOutlet var expireDate : UILabel?
     
     @IBOutlet weak var quantity: UILabel!
+    @IBAction func increaseFinishCount(sender: UIButton) {
+        
+    }
 }

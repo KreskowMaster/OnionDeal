@@ -22,6 +22,10 @@
 		F2152E381CB93D5200B521EE /* MBAmountLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E371CB93D5200B521EE /* MBAmountLabel.swift */; };
 		F2152E3C1CB93DF600B521EE /* CurrencyUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E3B1CB93DF600B521EE /* CurrencyUtil.swift */; };
 		F2152E3E1CB9447800B521EE /* FakeDealsDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E3D1CB9447800B521EE /* FakeDealsDatabase.swift */; };
+		F2152E451CB979F600B521EE /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E441CB979F600B521EE /* ProductsViewController.swift */; };
+		F2152E471CB97A2300B521EE /* AddProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E461CB97A2300B521EE /* AddProductViewController.swift */; };
+		F2152E4A1CB97C8B00B521EE /* Management.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2152E481CB97C8B00B521EE /* Management.storyboard */; };
+		F2152E4D1CB97F8E00B521EE /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E4C1CB97F8E00B521EE /* ProductCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +67,10 @@
 		F2152E371CB93D5200B521EE /* MBAmountLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MBAmountLabel.swift; sourceTree = "<group>"; };
 		F2152E3B1CB93DF600B521EE /* CurrencyUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyUtil.swift; sourceTree = "<group>"; };
 		F2152E3D1CB9447800B521EE /* FakeDealsDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeDealsDatabase.swift; sourceTree = "<group>"; };
+		F2152E441CB979F600B521EE /* ProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		F2152E461CB97A2300B521EE /* AddProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductViewController.swift; sourceTree = "<group>"; };
+		F2152E491CB97C8B00B521EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Management.storyboard; sourceTree = "<group>"; };
+		F2152E4C1CB97F8E00B521EE /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +127,7 @@
 				08E253C41CB900DD009ECBD0 /* ViewControllers */,
 				0877999C1CB8411900E10135 /* AppDelegate.swift */,
 				087799A01CB8411900E10135 /* Main.storyboard */,
+				F2152E481CB97C8B00B521EE /* Management.storyboard */,
 				087799A61CB8411A00E10135 /* Assets.xcassets */,
 				087799A81CB8411A00E10135 /* LaunchScreen.storyboard */,
 				087799AB1CB8411A00E10135 /* Info.plist */,
@@ -148,6 +157,7 @@
 		08E253C41CB900DD009ECBD0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F2152E431CB979E200B521EE /* Management */,
 				08E253CD1CB90B4D009ECBD0 /* Initial */,
 				08E253C71CB90774009ECBD0 /* Stock */,
 			);
@@ -219,6 +229,24 @@
 				F2152E3B1CB93DF600B521EE /* CurrencyUtil.swift */,
 			);
 			name = Utilities;
+			sourceTree = "<group>";
+		};
+		F2152E431CB979E200B521EE /* Management */ = {
+			isa = PBXGroup;
+			children = (
+				F2152E4B1CB97F7400B521EE /* Cell */,
+				F2152E441CB979F600B521EE /* ProductsViewController.swift */,
+				F2152E461CB97A2300B521EE /* AddProductViewController.swift */,
+			);
+			name = Management;
+			sourceTree = "<group>";
+		};
+		F2152E4B1CB97F7400B521EE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F2152E4C1CB97F8E00B521EE /* ProductCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				087799AA1CB8411A00E10135 /* LaunchScreen.storyboard in Resources */,
+				F2152E4A1CB97C8B00B521EE /* Management.storyboard in Resources */,
 				087799A71CB8411A00E10135 /* Assets.xcassets in Resources */,
 				087799A21CB8411900E10135 /* Main.storyboard in Resources */,
 			);
@@ -357,8 +386,11 @@
 			files = (
 				087799CE1CB8447A00E10135 /* InitialViewController.swift in Sources */,
 				F2152E381CB93D5200B521EE /* MBAmountLabel.swift in Sources */,
+				F2152E471CB97A2300B521EE /* AddProductViewController.swift in Sources */,
 				087799A51CB8411A00E10135 /* OnionDeal.xcdatamodeld in Sources */,
+				F2152E4D1CB97F8E00B521EE /* ProductCell.swift in Sources */,
 				F2152E3E1CB9447800B521EE /* FakeDealsDatabase.swift in Sources */,
+				F2152E451CB979F600B521EE /* ProductsViewController.swift in Sources */,
 				F2152E3C1CB93DF600B521EE /* CurrencyUtil.swift in Sources */,
 				0877999D1CB8411900E10135 /* AppDelegate.swift in Sources */,
 				08E253CA1CB90791009ECBD0 /* DealCell.swift in Sources */,
@@ -414,6 +446,14 @@
 				087799A91CB8411A00E10135 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		F2152E481CB97C8B00B521EE /* Management.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F2152E491CB97C8B00B521EE /* Base */,
+			);
+			name = Management.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -24,7 +24,7 @@ class Deal: NSManagedObject {
         return (results as? [Deal])
     }
     
-    static func addDeal(name : String, price : Float, photo : UIImage, expireDate : NSDate, priceBefore : Float, shop : String) {
+    static func addDeal(name : String, price : Float, photo : UIImage, expireDate : NSDate, priceBefore : Float, shop : String, quantity: Int) {
         let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         let newDeal = NSEntityDescription.insertNewObjectForEntityForName("Deal", inManagedObjectContext: context) as! Deal
         newDeal.name = name
@@ -33,9 +33,20 @@ class Deal: NSManagedObject {
         newDeal.expireDate = expireDate
         newDeal.priceBefore = priceBefore
         newDeal.shop = shop
+        newDeal.quantity = quantity
         
         try! context.save()
     }
     
-    
+    func increaseFinishCount(deal: Deal) {
+        let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+
+        if let finishedCount = deal.finishedCount {
+            deal.finishedCount = NSNumber(double: finishedCount.doubleValue + 1)
+        } else {
+            deal.finishedCount = 1
+        }
+        
+        try! context.save()
+    }
 }
