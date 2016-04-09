@@ -113,7 +113,6 @@
 		0877999B1CB8411900E10135 /* OnionDeal */ = {
 			isa = PBXGroup;
 			children = (
-				F2152E3D1CB9447800B521EE /* FakeDealsDatabase.swift */,
 				F2152E3A1CB93DE200B521EE /* Utilities */,
 				F2152E391CB93DD200B521EE /* Views */,
 				08E253CB1CB90B2F009ECBD0 /* Database */,
@@ -175,6 +174,7 @@
 		08E253CB1CB90B2F009ECBD0 /* Database */ = {
 			isa = PBXGroup;
 			children = (
+				08E253D61CB947A4009ECBD0 /* Fake */,
 				08E253CC1CB90B38009ECBD0 /* Class */,
 			);
 			name = Database;
@@ -195,6 +195,14 @@
 				087799CD1CB8447A00E10135 /* InitialViewController.swift */,
 			);
 			name = Initial;
+			sourceTree = "<group>";
+		};
+		08E253D61CB947A4009ECBD0 /* Fake */ = {
+			isa = PBXGroup;
+			children = (
+				F2152E3D1CB9447800B521EE /* FakeDealsDatabase.swift */,
+			);
+			name = Fake;
 			sourceTree = "<group>";
 		};
 		F2152E391CB93DD200B521EE /* Views */ = {

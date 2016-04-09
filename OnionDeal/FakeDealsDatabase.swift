@@ -11,7 +11,11 @@ import CoreData
 
 class FakeDealsDatabase {
     
-    static func createFakeDatabase() -> [Deal] {
+    static func createFakeDatabase() {
+        
+        if Deal.getAllDeals().count == 0 {
+            return
+        }
         
         let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         
@@ -59,6 +63,8 @@ class FakeDealsDatabase {
         deal5.priceBefore = 7.00
         deal5.priceAfter = 4.00
         deal5.shop = "Lidl"
+        
+        try! context.save()
     }
     
 }
