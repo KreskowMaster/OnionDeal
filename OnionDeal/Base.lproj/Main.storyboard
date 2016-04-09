@@ -60,11 +60,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0pb-IH-wNg">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OX5-SL-7Tn">
-                            <connections>
-                                <action selector="addTapped:" destination="CUU-T4-hbQ" id="UHz-cs-OEY"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OX5-SL-7Tn"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>

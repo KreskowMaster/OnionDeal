@@ -36,7 +36,4 @@ class FoodStockViewController: UIViewController, UITableViewDelegate, UITableVie
         
     }
 
-    @IBAction func addTapped(sender: AnyObject) {
-        Deal.addDeal("testDeal", price: 12.20, photo: UIImage(), expireDate: NSDate(), discount: 50, priceBefore: 50.20, priceAfter: 100.80)
-    }
 }
