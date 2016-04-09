@@ -17,4 +17,7 @@ class DealCell : UITableViewCell {
     @IBOutlet var productDiscount : UILabel?
     @IBOutlet var expireDate : UILabel?
     
+    @IBAction func increaseFinishCount(sender: UIButton) {
+        
+    }
 }

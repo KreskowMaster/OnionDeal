@@ -61,9 +61,3 @@ extension FoodStockViewController : UITableViewDelegate, UITableViewDataSource {
         print()
     }
 }
-
-extension FoodStockViewController {
-    @IBAction func increaseFinishCount(sender: UIButton) {
-        
-    }
-}
