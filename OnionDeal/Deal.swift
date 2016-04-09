@@ -16,12 +16,12 @@ class Deal: NSManagedObject {
         return ((Int(priceBefore!) - Int(priceAfter!)) / Int(priceBefore!)) * 100
     }
 
-    static func getAllDeals() -> [Deal] {
+    static func getAllDeals() -> [Deal]? {
         let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         let request = NSFetchRequest(entityName: "Deal")
         let results = try! context.executeFetchRequest(request)
         
-        return results as! [Deal]
+        return (results as? [Deal])
     }
     
     static func addDeal(name : String, price : Float, photo : UIImage, expireDate : NSDate, priceBefore : Float, priceAfter : Float, shop : String) {

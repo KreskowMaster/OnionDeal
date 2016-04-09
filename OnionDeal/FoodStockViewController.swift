@@ -12,21 +12,20 @@ class FoodStockViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    var dealsArray: [Deal] = []
+    var dealsArray: [Deal] = Deal.getAllDeals() ?? []
 
     let dateFormatter: NSDateFormatter = NSDateFormatter()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        FakeDealsDatabase.createFakeDatabase()
+
         self.tableView.delegate = self
         self.tableView.dataSource = self
 
         // setup date formatter
         dateFormatter.dateStyle = .ShortStyle
-    }
-
-    override func viewDidAppear(animated: Bool) {
-        dealsArray = Deal.getAllDeals()
     }
 
 }
@@ -37,6 +36,7 @@ extension FoodStockViewController : UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print("Count: \(dealsArray.count)")
         return dealsArray.count
     }
     
@@ -47,10 +47,14 @@ extension FoodStockViewController : UITableViewDelegate, UITableViewDataSource {
 
         cell.shopName!.text = deal.shop
         cell.productName!.text = deal.name
-        cell.productPrice!.amount = deal.price!.doubleValue
-        cell.productPhoto!.image = UIImage(data: deal.photo!)
+        cell.productPrice!.amount = deal.price?.doubleValue ?? 0.0
+        if let photo = deal.photo {
+            cell.productPhoto!.image = UIImage(data: photo)
+        }
         cell.productDiscount!.text = "\(deal.calculatedDiscount)%"
-        cell.expireDate!.text = dateFormatter.stringFromDate(deal.expireDate!)
+        if let expireDate = deal.expireDate {
+            cell.expireDate!.text = dateFormatter.stringFromDate(expireDate)
+        }
 
         return cell
     }

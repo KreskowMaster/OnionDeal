@@ -12,11 +12,16 @@ import CoreData
 class FakeDealsDatabase {
     
     static func createFakeDatabase() {
-        
-        if Deal.getAllDeals().count == 0 {
+
+        if let deals = Deal.getAllDeals() {
+            if deals.count > 0 {
+                return
+            }
+        } else {
+            print("Invalid deals array!")
             return
         }
-        
+
         let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         
         let deal1 = NSEntityDescription.insertNewObjectForEntityForName("Deal", inManagedObjectContext: context) as! Deal
