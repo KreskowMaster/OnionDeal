@@ -10,12 +10,11 @@ import UIKit
 
 class DealCell : UITableViewCell {
     
-    var productName : String?
-    var productPhoto : UIImageView?
-    var productPrice : Float?
-    var productPriceBefore : Int?
-    var productPriceAfter : Int?
-    var productDiscount : Int?
-    var expireDate : NSDate?
+    @IBOutlet var shopName : UILabel?
+    @IBOutlet var productName : UILabel?
+    @IBOutlet var productPhoto : UIImageView?
+    @IBOutlet var productPrice : MBAmountLabel?
+    @IBOutlet var productDiscount : UILabel?
+    @IBOutlet var expireDate : UILabel?
     
 }

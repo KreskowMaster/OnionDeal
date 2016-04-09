@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CUU-T4-hbQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CUU-T4-hbQ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -36,17 +37,99 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DRD-aD-zZc">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="142" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DRD-aD-zZc">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="U79-TA-eJG" customClass="DealCell" customModule="OnionDeal" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="142" id="U79-TA-eJG" customClass="DealCell" customModule="OnionDeal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="142"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U79-TA-eJG" id="Zhr-Hx-b9I">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="141.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NCM-xy-9UN">
+                                                    <rect key="frame" x="8" y="8" width="120" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="Pbk-Tm-1Fp"/>
+                                                        <constraint firstAttribute="width" constant="120" id="ht8-9u-t74"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shop name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fr8-SM-TiT">
+                                                    <rect key="frame" x="142" y="8" width="92.5" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zIF-31-Pyf">
+                                                    <rect key="frame" x="142" y="33" width="98" height="19"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8L-7Y-VHr" customClass="MBAmountLabel" customModule="OnionDeal" customModuleProvider="target">
+                                                    <rect key="frame" x="142" y="56" width="61.5" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="amount">
+                                                            <real key="value" value="19"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You save:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="154-t0-mZi">
+                                                    <rect key="frame" x="142" y="81" width="69" height="19"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="py9-hL-sfH">
+                                                    <rect key="frame" x="219" y="81" width="34" height="19"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offer valid until:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHh-Nz-x69">
+                                                    <rect key="frame" x="142" y="104" width="105.5" height="19"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19-Apr-2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pzF-2z-L0s">
+                                                    <rect key="frame" x="255" y="104" width="89" height="19"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Fr8-SM-TiT" firstAttribute="leading" secondItem="NCM-xy-9UN" secondAttribute="trailing" constant="14" id="12u-rt-EHP"/>
+                                                <constraint firstItem="Fr8-SM-TiT" firstAttribute="top" secondItem="Zhr-Hx-b9I" secondAttribute="topMargin" id="2nw-W6-90x"/>
+                                                <constraint firstItem="py9-hL-sfH" firstAttribute="leading" secondItem="154-t0-mZi" secondAttribute="trailing" constant="8" id="7Od-m3-LEd"/>
+                                                <constraint firstItem="zIF-31-Pyf" firstAttribute="top" secondItem="Fr8-SM-TiT" secondAttribute="bottom" constant="4" id="7zA-cB-kXA"/>
+                                                <constraint firstItem="py9-hL-sfH" firstAttribute="baseline" secondItem="154-t0-mZi" secondAttribute="baseline" id="8qK-Gt-OTz"/>
+                                                <constraint firstItem="NCM-xy-9UN" firstAttribute="leading" secondItem="Zhr-Hx-b9I" secondAttribute="leadingMargin" id="ABx-0T-j19"/>
+                                                <constraint firstItem="zIF-31-Pyf" firstAttribute="leading" secondItem="NCM-xy-9UN" secondAttribute="trailing" constant="14" id="CfG-uT-hsx"/>
+                                                <constraint firstItem="NCM-xy-9UN" firstAttribute="top" secondItem="Zhr-Hx-b9I" secondAttribute="topMargin" id="YdP-Oa-21O"/>
+                                                <constraint firstItem="154-t0-mZi" firstAttribute="top" secondItem="d8L-7Y-VHr" secondAttribute="bottom" constant="1.5" id="dIP-uT-fVo"/>
+                                                <constraint firstItem="sHh-Nz-x69" firstAttribute="leading" secondItem="NCM-xy-9UN" secondAttribute="trailing" constant="14" id="eUi-9b-TOx"/>
+                                                <constraint firstItem="154-t0-mZi" firstAttribute="leading" secondItem="NCM-xy-9UN" secondAttribute="trailing" constant="14" id="gCk-Z2-DE4"/>
+                                                <constraint firstItem="pzF-2z-L0s" firstAttribute="baseline" secondItem="sHh-Nz-x69" secondAttribute="baseline" id="hAu-ry-uIR"/>
+                                                <constraint firstItem="d8L-7Y-VHr" firstAttribute="top" secondItem="zIF-31-Pyf" secondAttribute="bottom" constant="4" id="tp9-b0-Dx3"/>
+                                                <constraint firstItem="pzF-2z-L0s" firstAttribute="leading" secondItem="sHh-Nz-x69" secondAttribute="trailing" constant="7.5" id="v0M-wK-BN1"/>
+                                                <constraint firstItem="d8L-7Y-VHr" firstAttribute="leading" secondItem="NCM-xy-9UN" secondAttribute="trailing" constant="14" id="vDM-mV-quA"/>
+                                                <constraint firstItem="sHh-Nz-x69" firstAttribute="top" secondItem="154-t0-mZi" secondAttribute="bottom" constant="4" id="xax-l3-bch"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="expireDate" destination="pzF-2z-L0s" id="n6x-ZY-o3N"/>
+                                            <outlet property="productDiscount" destination="py9-hL-sfH" id="kaY-3f-vDu"/>
+                                            <outlet property="productName" destination="zIF-31-Pyf" id="ObM-YA-5me"/>
+                                            <outlet property="productPhoto" destination="NCM-xy-9UN" id="lXJ-3w-FTT"/>
+                                            <outlet property="productPrice" destination="d8L-7Y-VHr" id="9ox-ul-6JG"/>
+                                            <outlet property="shopName" destination="Fr8-SM-TiT" id="oaL-nV-cFr"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
