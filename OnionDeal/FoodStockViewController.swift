@@ -8,28 +8,35 @@
 
 import UIKit
 
-class FoodStockViewController: UIViewController {
+class FoodStockViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var tableView: UITableView!
+    
+    let dealsArray : [Deal] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dealsArray.count
     }
-    */
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("TableViewDealCell") as! DealCell
+        cell.productName = "Test"
+        cell.productPrice = 100
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+    }
 
+    @IBAction func addTapped(sender: AnyObject) {
+        Deal.addDeal("testDeal", price: 12.20, photo: UIImage(), expireDate: NSDate(), discount: 50, priceBefore: 50.20, priceAfter: 100.80)
+    }
 }

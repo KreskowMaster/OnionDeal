@@ -15,6 +15,10 @@
 		087799B51CB8411A00E10135 /* OnionDealTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087799B41CB8411A00E10135 /* OnionDealTests.swift */; };
 		087799C01CB8411A00E10135 /* OnionDealUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087799BF1CB8411A00E10135 /* OnionDealUITests.swift */; };
 		087799CE1CB8447A00E10135 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087799CD1CB8447A00E10135 /* InitialViewController.swift */; };
+		08E253C61CB900F7009ECBD0 /* FoodStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E253C51CB900F7009ECBD0 /* FoodStockViewController.swift */; };
+		08E253CA1CB90791009ECBD0 /* DealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E253C91CB90791009ECBD0 /* DealCell.swift */; };
+		08E253D01CB90B68009ECBD0 /* Deal+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E253CE1CB90B68009ECBD0 /* Deal+CoreDataProperties.swift */; };
+		08E253D11CB90B68009ECBD0 /* Deal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E253CF1CB90B68009ECBD0 /* Deal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		087799BF1CB8411A00E10135 /* OnionDealUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnionDealUITests.swift; sourceTree = "<group>"; };
 		087799C11CB8411A00E10135 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		087799CD1CB8447A00E10135 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		08E253C51CB900F7009ECBD0 /* FoodStockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodStockViewController.swift; sourceTree = "<group>"; };
+		08E253C91CB90791009ECBD0 /* DealCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealCell.swift; sourceTree = "<group>"; };
+		08E253CE1CB90B68009ECBD0 /* Deal+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Deal+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		08E253CF1CB90B68009ECBD0 /* Deal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +107,10 @@
 		0877999B1CB8411900E10135 /* OnionDeal */ = {
 			isa = PBXGroup;
 			children = (
+				08E253CB1CB90B2F009ECBD0 /* Database */,
+				08E253C41CB900DD009ECBD0 /* ViewControllers */,
 				0877999C1CB8411900E10135 /* AppDelegate.swift */,
 				087799A01CB8411900E10135 /* Main.storyboard */,
-				087799CD1CB8447A00E10135 /* InitialViewController.swift */,
 				087799A61CB8411A00E10135 /* Assets.xcassets */,
 				087799A81CB8411A00E10135 /* LaunchScreen.storyboard */,
 				087799AB1CB8411A00E10135 /* Info.plist */,
@@ -126,6 +135,57 @@
 				087799C11CB8411A00E10135 /* Info.plist */,
 			);
 			path = OnionDealUITests;
+			sourceTree = "<group>";
+		};
+		08E253C41CB900DD009ECBD0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				08E253CD1CB90B4D009ECBD0 /* Initial */,
+				08E253C71CB90774009ECBD0 /* Stock */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		08E253C71CB90774009ECBD0 /* Stock */ = {
+			isa = PBXGroup;
+			children = (
+				08E253C51CB900F7009ECBD0 /* FoodStockViewController.swift */,
+				08E253C81CB9077A009ECBD0 /* Cell */,
+			);
+			name = Stock;
+			sourceTree = "<group>";
+		};
+		08E253C81CB9077A009ECBD0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				08E253C91CB90791009ECBD0 /* DealCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		08E253CB1CB90B2F009ECBD0 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				08E253CC1CB90B38009ECBD0 /* Class */,
+			);
+			name = Database;
+			sourceTree = "<group>";
+		};
+		08E253CC1CB90B38009ECBD0 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				08E253CE1CB90B68009ECBD0 /* Deal+CoreDataProperties.swift */,
+				08E253CF1CB90B68009ECBD0 /* Deal.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		08E253CD1CB90B4D009ECBD0 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				087799CD1CB8447A00E10135 /* InitialViewController.swift */,
+			);
+			name = Initial;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +325,10 @@
 				087799CE1CB8447A00E10135 /* InitialViewController.swift in Sources */,
 				087799A51CB8411A00E10135 /* OnionDeal.xcdatamodeld in Sources */,
 				0877999D1CB8411900E10135 /* AppDelegate.swift in Sources */,
+				08E253CA1CB90791009ECBD0 /* DealCell.swift in Sources */,
+				08E253C61CB900F7009ECBD0 /* FoodStockViewController.swift in Sources */,
+				08E253D01CB90B68009ECBD0 /* Deal+CoreDataProperties.swift in Sources */,
+				08E253D11CB90B68009ECBD0 /* Deal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -489,6 +553,7 @@
 				087799C61CB8411A00E10135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		087799C71CB8411A00E10135 /* Build configuration list for PBXNativeTarget "OnionDealTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +562,7 @@
 				087799C91CB8411A00E10135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		087799CA1CB8411A00E10135 /* Build configuration list for PBXNativeTarget "OnionDealUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +571,7 @@
 				087799CC1CB8411A00E10135 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
