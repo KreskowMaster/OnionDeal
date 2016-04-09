@@ -11,12 +11,18 @@ import UIKit
 class DealCell : UITableViewCell {
     
     @IBOutlet var shopName : UILabel?
+    
     @IBOutlet var productName : UILabel?
+    
     @IBOutlet var productPhoto : UIImageView?
+    
     @IBOutlet var productPrice : MBAmountLabel?
+    
     @IBOutlet var productDiscount : UILabel?
+    
     @IBOutlet var expireDate : UILabel?
     
+    @IBOutlet weak var quantity: UILabel!
     @IBAction func increaseFinishCount(sender: UIButton) {
         
     }
