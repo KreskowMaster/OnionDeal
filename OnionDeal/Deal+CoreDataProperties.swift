@@ -20,6 +20,6 @@ extension Deal {
     @NSManaged var expireDate: NSDate?
     @NSManaged var priceAfter: NSNumber?
     @NSManaged var priceBefore: NSNumber?
-    @NSManaged var discount: NSNumber?
+    @NSManaged var shop: String?
 
 }
