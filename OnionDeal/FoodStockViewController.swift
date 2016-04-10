@@ -12,7 +12,7 @@ class FoodStockViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    var dealsArray: [Deal] = Deal.getAllDeals() ?? []
+    var dealsArray: [Deal] = []
     
     let dateFormatter: NSDateFormatter = NSDateFormatter()
 
@@ -26,10 +26,10 @@ class FoodStockViewController: UIViewController {
         dateFormatter.dateStyle = .ShortStyle
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
+        self.dealsArray = Deal.getAllDeals() ?? []
         self.tableView.reloadData()
     }
-
 }
 
 extension FoodStockViewController : UITableViewDelegate, UITableViewDataSource {
