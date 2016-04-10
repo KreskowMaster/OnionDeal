@@ -17,6 +17,8 @@ class EditProductViewController : UITableViewController {
     @IBOutlet weak var expireDateLabel: UILabel!
     @IBOutlet weak var setExpireDateButton: UIButton!
     @IBOutlet weak var addPhotoButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var quantityTextField: UITextField!
     
     var newDeal : Deal = Deal()
     
@@ -30,5 +32,7 @@ class EditProductViewController : UITableViewController {
     override func viewDidAppear(animated: Bool) {
         newDeal = Deal.addDeal(productNameTextField.text!, price: Float(afterPriceTextField.text!)!, photo: UIImage(), expireDate: NSDate(), priceBefore: Float(basePriceTextField.text!)!, shop: "Lidl", quantity: Int())
         discountLabel.text = String(newDeal.calculatedDiscount)
+    }
+    @IBAction func saveButtonPressed(sender: UIButton) {
     }
 }
