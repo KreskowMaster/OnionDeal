@@ -167,26 +167,69 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KVA-gD-QOl">
+                                        <rect key="frame" x="0.0" y="167" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KVA-gD-QOl" id="FNS-iq-nBS">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount: 10%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ng-Ow-HLM">
+                                                    <rect key="frame" x="8" y="11" width="108" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="3Ng-Ow-HLM" firstAttribute="leading" secondItem="FNS-iq-nBS" secondAttribute="leading" constant="8" id="9N2-hh-gGa"/>
+                                                <constraint firstItem="3Ng-Ow-HLM" firstAttribute="top" secondItem="FNS-iq-nBS" secondAttribute="top" constant="11" id="OO4-Sw-oGP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection id="Jiz-SF-dUz">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pQ5-c9-EE4">
-                                        <rect key="frame" x="0.0" y="203" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="247" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pQ5-c9-EE4" id="rNc-K3-snZ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8it-Fb-u9b">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10.04.2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpC-DH-gBA">
+                                                    <rect key="frame" x="145.5" y="11" width="84" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="zpC-DH-gBA" firstAttribute="centerX" secondItem="rNc-K3-snZ" secondAttribute="centerX" id="Mik-Lr-Enh"/>
+                                                <constraint firstItem="zpC-DH-gBA" firstAttribute="top" secondItem="rNc-K3-snZ" secondAttribute="top" constant="11" id="khb-Fr-yKD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Xvj-DP-Xzi">
+                                        <rect key="frame" x="0.0" y="291" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xvj-DP-Xzi" id="3mQ-by-S9f">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awm-2T-Usg">
                                                     <rect key="frame" x="8" y="7" width="359" height="30"/>
                                                     <state key="normal" title="Set expire date"/>
+                                                    <connections>
+                                                        <action selector="setExpireDatePressed:" destination="cbT-cY-sly" eventType="touchUpInside" id="V5T-Ma-ovu"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="8it-Fb-u9b" firstAttribute="leading" secondItem="rNc-K3-snZ" secondAttribute="leading" constant="8" id="6vN-om-U89"/>
-                                                <constraint firstAttribute="trailing" secondItem="8it-Fb-u9b" secondAttribute="trailing" constant="8" id="WlG-fZ-UBs"/>
-                                                <constraint firstItem="8it-Fb-u9b" firstAttribute="top" secondItem="rNc-K3-snZ" secondAttribute="top" constant="7" id="dB5-Qj-GhB"/>
+                                                <constraint firstItem="awm-2T-Usg" firstAttribute="top" secondItem="3mQ-by-S9f" secondAttribute="top" constant="7" id="Biw-oO-gJL"/>
+                                                <constraint firstAttribute="trailing" secondItem="awm-2T-Usg" secondAttribute="trailing" constant="8" id="JZu-v5-G9J"/>
+                                                <constraint firstItem="awm-2T-Usg" firstAttribute="leading" secondItem="3mQ-by-S9f" secondAttribute="leading" constant="8" id="XVO-xx-Bt9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -195,7 +238,7 @@
                             <tableViewSection id="Npa-Z1-PgW">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="125" id="ZJ4-i0-hzu">
-                                        <rect key="frame" x="0.0" y="283" width="375" height="125"/>
+                                        <rect key="frame" x="0.0" y="371" width="375" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZJ4-i0-hzu" id="7rP-k3-dGU">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="124.5"/>
@@ -203,7 +246,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="WYw-GQ-kYR">
-                                        <rect key="frame" x="0.0" y="408" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="496" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WYw-GQ-kYR" id="prR-FN-ujg">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -212,6 +255,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYz-Iw-l10">
                                                     <rect key="frame" x="8" y="7" width="359" height="30"/>
                                                     <state key="normal" title="Add Photo"/>
+                                                    <connections>
+                                                        <action selector="addPhotoButtonPressed:" destination="cbT-cY-sly" eventType="touchUpInside" id="dyn-rb-fr9"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -230,6 +276,15 @@
                         </connections>
                     </tableView>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addPhotoButton" destination="jYz-Iw-l10" id="dS6-5J-lWL"/>
+                        <outlet property="afterPriceTextField" destination="Dh3-xM-IIU" id="ypS-Nw-yRt"/>
+                        <outlet property="basePriceTextField" destination="8ad-W5-uB1" id="Xl0-rb-C39"/>
+                        <outlet property="discountLabel" destination="3Ng-Ow-HLM" id="wic-p7-zo5"/>
+                        <outlet property="expireDateLabel" destination="zpC-DH-gBA" id="V0k-nG-QpL"/>
+                        <outlet property="productNameTextField" destination="bfK-Sq-VpE" id="26U-GW-aGe"/>
+                        <outlet property="setExpireDateButton" destination="awm-2T-Usg" id="lTE-QB-yhV"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jSA-T2-iYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
