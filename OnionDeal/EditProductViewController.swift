@@ -24,16 +24,19 @@ class EditProductViewController : UITableViewController, UINavigationControllerD
     
     var pickedImage = UIImage()
     
+    var onSave: ((Deal) -> ())?
+    
     @IBAction func addPhotoButtonPressed(sender: UIButton) {
         imagePicker =  UIImagePickerController()
         imagePicker.delegate = self
-        imagePicker.sourceType = .Camera
+        
+        if UIImagePickerController.isSourceTypeAvailable(.Camera) {
+            imagePicker.sourceType = .Camera
+        } else {
+            imagePicker.sourceType = .PhotoLibrary
+        }
         
         presentViewController(imagePicker, animated: true, completion: nil)
-    }
-    
-    @IBAction func setExpireDatePressed(sender: UIButton) {
-        
     }
     
     @IBAction func saveButtonPressed(sender: UIButton) {
@@ -46,9 +49,11 @@ class EditProductViewController : UITableViewController, UINavigationControllerD
 //        let expires = dateFormatter.dateFromString(expireDateLabel!.text!)
 //        let quantity = Int(quantityTextField.text ?? "0")
         
-        Deal.addDeal(name!, price: price!, photo: pickedImage, expireDate: NSDate(), priceBefore: beforePrice!, shop: "Lidl", quantity: 1)
+        let deal: Deal = Deal.addDeal(name!, price: price!, photo: pickedImage, expireDate: NSDate(), priceBefore: beforePrice!, shop: "Lidl", quantity: 1)
         
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: {
+            self.onSave?(deal)
+        })
     }
 
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
