@@ -26,6 +26,7 @@
 		F2152E471CB97A2300B521EE /* EditProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E461CB97A2300B521EE /* EditProductViewController.swift */; };
 		F2152E4A1CB97C8B00B521EE /* Management.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2152E481CB97C8B00B521EE /* Management.storyboard */; };
 		F2152E4D1CB97F8E00B521EE /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E4C1CB97F8E00B521EE /* ProductCell.swift */; };
+		F2152E4F1CB997B800B521EE /* ProductAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E4E1CB997B800B521EE /* ProductAccessoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		F2152E461CB97A2300B521EE /* EditProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditProductViewController.swift; sourceTree = "<group>"; };
 		F2152E491CB97C8B00B521EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Management.storyboard; sourceTree = "<group>"; };
 		F2152E4C1CB97F8E00B521EE /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
+		F2152E4E1CB997B800B521EE /* ProductAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductAccessoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				F2152E371CB93D5200B521EE /* MBAmountLabel.swift */,
+				F2152E4E1CB997B800B521EE /* ProductAccessoryView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				F2152E451CB979F600B521EE /* ProductsViewController.swift in Sources */,
 				F2152E3C1CB93DF600B521EE /* CurrencyUtil.swift in Sources */,
 				0877999D1CB8411900E10135 /* AppDelegate.swift in Sources */,
+				F2152E4F1CB997B800B521EE /* ProductAccessoryView.swift in Sources */,
 				08E253CA1CB90791009ECBD0 /* DealCell.swift in Sources */,
 				08E253C61CB900F7009ECBD0 /* FoodStockViewController.swift in Sources */,
 				08E253D01CB90B68009ECBD0 /* Deal+CoreDataProperties.swift in Sources */,
