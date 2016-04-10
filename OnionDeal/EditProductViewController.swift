@@ -25,14 +25,13 @@ class EditProductViewController : UITableViewController {
     @IBAction func addPhotoButtonPressed(sender: UIButton) {
         
     }
+    
     @IBAction func setExpireDatePressed(sender: UIButton) {
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    @IBAction func saveButtonPressed(sender: UIButton) {
         newDeal = Deal.addDeal(productNameTextField.text!, price: Float(afterPriceTextField.text!)!, photo: UIImage(), expireDate: NSDate(), priceBefore: Float(basePriceTextField.text!)!, shop: "Lidl", quantity: Int())
         discountLabel.text = String(newDeal.calculatedDiscount)
-    }
-    @IBAction func saveButtonPressed(sender: UIButton) {
     }
 }
