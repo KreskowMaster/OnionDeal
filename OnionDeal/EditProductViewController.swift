@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EditProductViewController : UITableViewController {
+class EditProductViewController : UITableViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var productNameTextField: UITextField!
     @IBOutlet weak var basePriceTextField: UITextField!
@@ -20,10 +20,17 @@ class EditProductViewController : UITableViewController {
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var quantityTextField: UITextField!
     
+    var imagePicker: UIImagePickerController!
+    
     var newDeal : Deal = Deal()
+    var pickedImage = UIImage()
     
     @IBAction func addPhotoButtonPressed(sender: UIButton) {
+        imagePicker =  UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .PhotoLibrary
         
+        presentViewController(imagePicker, animated: true, completion: nil)
     }
     
     @IBAction func setExpireDatePressed(sender: UIButton) {
@@ -31,7 +38,22 @@ class EditProductViewController : UITableViewController {
     }
     
     @IBAction func saveButtonPressed(sender: UIButton) {
-        newDeal = Deal.addDeal(productNameTextField.text!, price: Float(afterPriceTextField.text!)!, photo: UIImage(), expireDate: NSDate(), priceBefore: Float(basePriceTextField.text!)!, shop: "Lidl", quantity: Int())
+        
+        let dateFormatter = NSDateFormatter()
+        
+        let name = productNameTextField.text
+        let beforePrice = Float(basePriceTextField.text ?? "0.0")
+        let price = Float(afterPriceTextField.text ?? "0.0")
+//        let expires = dateFormatter.dateFromString(expireDateLabel!.text!)
+        let quantity = Int(quantityTextField.text ?? "0")
+        
+        newDeal = Deal.addDeal(name!, price: price!, photo: pickedImage, expireDate: NSDate(), priceBefore: beforePrice!, shop: "Lidl", quantity: quantity!)
         discountLabel.text = String(newDeal.calculatedDiscount)
     }
+
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        imagePicker.dismissViewControllerAnimated(true, completion: nil)
+        pickedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+    }
+    
 }
