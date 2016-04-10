@@ -10,13 +10,15 @@ import UIKit
 
 class ProductsViewController : UIViewController {
     
-    let myDeals = Deal.getDealsForShop("Lidl")
+    var myDeals = Deal.getDealsForShop("Lidl")
     
     let dateFormatter: NSDateFormatter = NSDateFormatter()
     
     override func viewDidLoad() {
         dateFormatter.dateStyle = .ShortStyle
     }
+
+    
 }
 
 extension ProductsViewController : UITableViewDelegate, UITableViewDataSource {
@@ -39,11 +41,16 @@ extension ProductsViewController : UITableViewDelegate, UITableViewDataSource {
             cell.expireDate?.text = dateFormatter.stringFromDate(expireDate)
         }
         
-        let accView = ProductAccessoryView(frame: CGRect(x: 0, y: 0, width: 80, height: 35))
-        cell.accessoryView = accView
-        
-        print(cell.accessoryView?.frame)
         return cell
     }
     
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if editingStyle == .Delete {
+            let indexPaths = [indexPath]
+            myDeals?.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: .Automatic)
+        }
+    }
+    
+
 }

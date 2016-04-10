@@ -198,7 +198,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="tableView" destination="DRD-aD-zZc" id="lfG-ad-mOz"/>
+                        <outlet property="tableView" destination="DRD-aD-zZc" id="ffU-4h-Pn8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IxI-jg-Sd8" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -13,7 +13,7 @@ class FoodStockViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
 
     var dealsArray: [Deal] = Deal.getAllDeals() ?? []
-
+    
     let dateFormatter: NSDateFormatter = NSDateFormatter()
 
     override func viewDidLoad() {
@@ -24,6 +24,10 @@ class FoodStockViewController: UIViewController {
 
         // setup date formatter
         dateFormatter.dateStyle = .ShortStyle
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        self.tableView.reloadData()
     }
 
 }
