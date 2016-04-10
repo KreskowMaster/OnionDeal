@@ -59,6 +59,7 @@ class EditProductViewController : UITableViewController, UINavigationControllerD
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
         pickedImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+        addedPhotoImageView.image = pickedImage
     }
     
 }
