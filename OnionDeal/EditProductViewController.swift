@@ -19,6 +19,7 @@ class EditProductViewController : UITableViewController {
     @IBOutlet weak var addPhotoButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var quantityTextField: UITextField!
+    @IBOutlet weak var addedPhotoImageView: UIImageView!
     
     var newDeal : Deal = Deal()
     

@@ -333,6 +333,7 @@
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
                         <outlet property="addPhotoButton" destination="jYz-Iw-l10" id="dS6-5J-lWL"/>
+                        <outlet property="addedPhotoImageView" destination="KJO-dK-YGW" id="0CQ-6a-kay"/>
                         <outlet property="afterPriceTextField" destination="Dh3-xM-IIU" id="ypS-Nw-yRt"/>
                         <outlet property="basePriceTextField" destination="8ad-W5-uB1" id="Xl0-rb-C39"/>
                         <outlet property="discountLabel" destination="3Ng-Ow-HLM" id="wic-p7-zo5"/>
