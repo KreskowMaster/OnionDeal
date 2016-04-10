@@ -337,6 +337,7 @@
                         <outlet property="afterPriceTextField" destination="Dh3-xM-IIU" id="ypS-Nw-yRt"/>
                         <outlet property="basePriceTextField" destination="8ad-W5-uB1" id="Xl0-rb-C39"/>
                         <outlet property="discountLabel" destination="3Ng-Ow-HLM" id="wic-p7-zo5"/>
+                        <outlet property="expireDateTextField" destination="qhN-HF-aPQ" id="gDV-Tw-BGU"/>
                         <outlet property="productNameTextField" destination="bfK-Sq-VpE" id="26U-GW-aGe"/>
                         <outlet property="quantityTextField" destination="qhN-HF-aPQ" id="dEc-Dl-MUx"/>
                         <outlet property="saveButton" destination="Tbl-wK-TIq" id="kCs-eP-iPJ"/>

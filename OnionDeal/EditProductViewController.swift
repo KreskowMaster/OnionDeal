@@ -14,8 +14,7 @@ class EditProductViewController : UITableViewController {
     @IBOutlet weak var basePriceTextField: UITextField!
     @IBOutlet weak var afterPriceTextField: UITextField!
     @IBOutlet weak var discountLabel: UILabel!
-    @IBOutlet weak var expireDateLabel: UILabel!
-    @IBOutlet weak var setExpireDateButton: UIButton!
+    @IBOutlet weak var expireDateTextField: UITextField!
     @IBOutlet weak var addPhotoButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var quantityTextField: UITextField!
