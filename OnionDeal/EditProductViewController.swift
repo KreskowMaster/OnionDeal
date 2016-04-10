@@ -16,9 +16,13 @@ class EditProductViewController : UITableViewController {
     @IBOutlet weak var expireDateLabel: UILabel!
     @IBOutlet weak var setExpireDateButton: UIButton!
     @IBOutlet weak var addPhotoButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var quantityTextField: UITextField!
     
     @IBAction func addPhotoButtonPressed(sender: UIButton) {
     }
     @IBAction func setExpireDatePressed(sender: UIButton) {
+    }
+    @IBAction func saveButtonPressed(sender: UIButton) {
     }
 }
