@@ -10,6 +10,8 @@ import UIKit
 
 class ProductsViewController : UIViewController {
     
+    let myDeals = Deal.getDealsForShop("Lidl")
+    
     let dateFormatter: NSDateFormatter = NSDateFormatter()
     
     override func viewDidLoad() {
@@ -24,15 +26,23 @@ extension ProductsViewController : UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 6
+        return myDeals?.count ?? 0
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ProductCell") as! ProductCell
         
-        cell.productName?.text = "Test Product"
-        cell.expireDate?.text = dateFormatter.stringFromDate(NSDate())
+        let deal = myDeals![indexPath.row]
         
+        cell.productName?.text = deal.name
+        if let expireDate = deal.expireDate {
+            cell.expireDate?.text = dateFormatter.stringFromDate(expireDate)
+        }
+        
+        let accView = ProductAccessoryView(frame: CGRect(x: 0, y: 0, width: 80, height: 35))
+        cell.accessoryView = accView
+        
+        print(cell.accessoryView?.frame)
         return cell
     }
     

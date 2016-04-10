@@ -24,6 +24,16 @@ class Deal: NSManagedObject {
         return (results as? [Deal])
     }
     
+    static func getDealsForShop(shop: String) -> [Deal]? {
+        let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        let request = NSFetchRequest(entityName: "Deal")
+        let predicate = NSPredicate(format: "shop == %@", shop)
+        request.predicate = predicate
+        let results = try! context.executeFetchRequest(request)
+        
+        return (results as? [Deal])
+    }
+    
     static func addDeal(name : String, price : Float, photo : UIImage, expireDate : NSDate, priceBefore : Float, shop : String, quantity: Int) {
         let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         let newDeal = NSEntityDescription.insertNewObjectForEntityForName("Deal", inManagedObjectContext: context) as! Deal
