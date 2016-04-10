@@ -276,9 +276,9 @@
                                                         <constraint firstAttribute="height" constant="71" id="xqH-qz-Kek"/>
                                                     </constraints>
                                                 </imageView>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYz-Iw-l10">
-                                                    <rect key="frame" x="151" y="21" width="72" height="30"/>
-                                                    <state key="normal" title="Add Photo"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYz-Iw-l10">
+                                                    <rect key="frame" x="150" y="5" width="74" height="61"/>
+                                                    <state key="normal" image="addPhoto"/>
                                                     <connections>
                                                         <action selector="addPhotoButtonPressed:" destination="cbT-cY-sly" eventType="touchUpInside" id="dyn-rb-fr9"/>
                                                     </connections>
@@ -351,4 +351,7 @@
             <point key="canvasLocation" x="1169.5" y="247"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="addPhoto" width="74" height="61"/>
+    </resources>
 </document>
