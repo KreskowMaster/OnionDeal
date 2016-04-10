@@ -57,9 +57,9 @@ class EditProductViewController : UITableViewController, UINavigationControllerD
         
         let beforePrice = Float(basePriceTextField.text ?? "0.0") ?? 0
         let price = Float(afterPriceTextField.text ?? "0.0") ?? 0
-//        let quantity = Int(quantityTextField.text ?? "0")
+        let quantity = Int(quantityTextField.text ?? "0") ?? 0
         
-        let deal: Deal = Deal.addDeal(name!, price: price, photo: pickedImage, expireDate: expires!, priceBefore: beforePrice, shop: "Lidl", quantity: 1)
+        let deal: Deal = Deal.addDeal(name!, price: price, photo: pickedImage, expireDate: expires!, priceBefore: beforePrice, shop: "Lidl", quantity: quantity)
         
         self.onSave?(deal)
         self.navigationController?.popViewControllerAnimated(true)

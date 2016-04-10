@@ -57,6 +57,7 @@ extension FoodStockViewController : UITableViewDelegate, UITableViewDataSource {
         if let expireDate = deal.expireDate {
             cell.expireDate!.text = dateFormatter.stringFromDate(expireDate)
         }
+        cell.quantity.text = "\(deal.quantity ?? 0)"
 
         return cell
     }

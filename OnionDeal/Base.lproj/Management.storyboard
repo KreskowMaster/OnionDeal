@@ -342,7 +342,7 @@
                         <outlet property="discountLabel" destination="3Ng-Ow-HLM" id="wic-p7-zo5"/>
                         <outlet property="expireDateTextField" destination="qhN-HF-aPQ" id="gDV-Tw-BGU"/>
                         <outlet property="productNameTextField" destination="bfK-Sq-VpE" id="26U-GW-aGe"/>
-                        <outlet property="quantityTextField" destination="qhN-HF-aPQ" id="dEc-Dl-MUx"/>
+                        <outlet property="quantityTextField" destination="XnS-vr-ckt" id="Idd-pX-5eb"/>
                         <outlet property="saveButton" destination="Tbl-wK-TIq" id="kCs-eP-iPJ"/>
                     </connections>
                 </tableViewController>
