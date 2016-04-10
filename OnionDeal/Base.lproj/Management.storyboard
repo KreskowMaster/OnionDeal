@@ -85,7 +85,7 @@
                     <navigationItem key="navigationItem" id="j3i-W3-yr7">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="E9K-MH-Vnt">
                             <connections>
-                                <segue destination="cbT-cY-sly" kind="presentation" identifier="EditProductSegue" id="cCI-rv-qVJ"/>
+                                <segue destination="cbT-cY-sly" kind="show" identifier="EditProductSegue" id="cCI-rv-qVJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -104,7 +104,7 @@
             <objects>
                 <tableViewController id="cbT-cY-sly" customClass="EditProductViewController" customModule="OnionDeal" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="tJI-mv-tLF">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="936"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <sections>

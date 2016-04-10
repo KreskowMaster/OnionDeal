@@ -27,6 +27,7 @@
 		F2152E4A1CB97C8B00B521EE /* Management.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2152E481CB97C8B00B521EE /* Management.storyboard */; };
 		F2152E4D1CB97F8E00B521EE /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E4C1CB97F8E00B521EE /* ProductCell.swift */; };
 		F2152E4F1CB997B800B521EE /* ProductAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2152E4E1CB997B800B521EE /* ProductAccessoryView.swift */; };
+		F26D51251CBA8F0300A39602 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F26D51241CBA8F0300A39602 /* UIViewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		F2152E491CB97C8B00B521EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Management.storyboard; sourceTree = "<group>"; };
 		F2152E4C1CB97F8E00B521EE /* ProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		F2152E4E1CB997B800B521EE /* ProductAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductAccessoryView.swift; sourceTree = "<group>"; };
+		F26D51241CBA8F0300A39602 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		0877999B1CB8411900E10135 /* OnionDeal */ = {
 			isa = PBXGroup;
 			children = (
+				F26D51231CBA8EF700A39602 /* Extensions */,
 				F2152E3A1CB93DE200B521EE /* Utilities */,
 				F2152E391CB93DD200B521EE /* Views */,
 				08E253CB1CB90B2F009ECBD0 /* Database */,
@@ -250,6 +253,14 @@
 				F2152E4C1CB97F8E00B521EE /* ProductCell.swift */,
 			);
 			name = Cell;
+			sourceTree = "<group>";
+		};
+		F26D51231CBA8EF700A39602 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F26D51241CBA8F0300A39602 /* UIViewControllerExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +400,7 @@
 			files = (
 				087799CE1CB8447A00E10135 /* InitialViewController.swift in Sources */,
 				F2152E381CB93D5200B521EE /* MBAmountLabel.swift in Sources */,
+				F26D51251CBA8F0300A39602 /* UIViewControllerExtension.swift in Sources */,
 				F2152E471CB97A2300B521EE /* EditProductViewController.swift in Sources */,
 				087799A51CB8411A00E10135 /* OnionDeal.xcdatamodeld in Sources */,
 				F2152E4D1CB97F8E00B521EE /* ProductCell.swift in Sources */,

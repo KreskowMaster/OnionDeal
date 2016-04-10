@@ -13,6 +13,9 @@ import CoreData
 class Deal: NSManagedObject {
     
     var calculatedDiscount : Int {
+        if priceBefore == 0 {
+            return 0
+        }
         return Int((priceBefore!.doubleValue - price!.doubleValue) / priceBefore!.doubleValue * 100)
     }
 

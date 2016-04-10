@@ -42,18 +42,27 @@ class EditProductViewController : UITableViewController, UINavigationControllerD
     @IBAction func saveButtonPressed(sender: UIButton) {
         
         let dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = .ShortStyle
         
         let name = productNameTextField.text
-        let beforePrice = Float(basePriceTextField.text ?? "0.0")
-        let price = Float(afterPriceTextField.text ?? "0.0")
-//        let expires = dateFormatter.dateFromString(expireDateLabel!.text!)
+        if name == nil || name == "" {
+            self.showAlertWithTitle("ERROR", message: "Please enter a product name!")
+            return
+        }
+        let expires = dateFormatter.dateFromString(expireDateTextField.text!)
+        if expires == nil {
+            self.showAlertWithTitle("ERROR", message: "Please enter a valid expire date!")
+            return
+        }
+        
+        let beforePrice = Float(basePriceTextField.text ?? "0.0") ?? 0
+        let price = Float(afterPriceTextField.text ?? "0.0") ?? 0
 //        let quantity = Int(quantityTextField.text ?? "0")
         
-        let deal: Deal = Deal.addDeal(name!, price: price!, photo: pickedImage, expireDate: NSDate(), priceBefore: beforePrice!, shop: "Lidl", quantity: 1)
+        let deal: Deal = Deal.addDeal(name!, price: price, photo: pickedImage, expireDate: expires!, priceBefore: beforePrice, shop: "Lidl", quantity: 1)
         
-        self.dismissViewControllerAnimated(true, completion: {
-            self.onSave?(deal)
-        })
+        self.onSave?(deal)
+        self.navigationController?.popViewControllerAnimated(true)
     }
 
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
