@@ -27,31 +27,23 @@ class ProductAccessoryView : UIView {
     
     func setup() {
         editButton = UIButton(type: .System)
-        editButton.setTitle("E", forState: .Normal)
+        editButton.frame = CGRect(x: 8, y: 8, width: 24, height: 24)
+        editButton.setBackgroundImage(UIImage(named: "editIcon"), forState: .Normal)
         editButton.addTarget(self, action: #selector(editProduct), forControlEvents: .TouchUpInside)
-        editButton.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(editButton)
         
         deleteButton = UIButton(type: .System)
-        deleteButton.setTitle("D", forState: .Normal)
+        deleteButton.frame = CGRect(x: 48, y: 8, width: 24, height: 24)
+        deleteButton.setBackgroundImage(UIImage(named: "deleteIcon"), forState: .Normal)
         deleteButton.addTarget(self, action: #selector(deleteProduct), forControlEvents: .TouchUpInside)
-        deleteButton.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(deleteButton)
     }
     
-    override func updateConstraints() {
-        editButton.leadingAnchor.constraintEqualToAnchor(self.leadingAnchor)
-        editButton.topAnchor.constraintEqualToAnchor(self.topAnchor)
-        deleteButton.leadingAnchor.constraintEqualToAnchor(editButton.trailingAnchor, constant: 20)
-        deleteButton.topAnchor.constraintEqualToAnchor(editButton.topAnchor)
-        super.updateConstraints()
-    }
-    
     func editProduct(sender: UIButton) {
-        
+        print("Edit Tapped")
     }
 
     func deleteProduct(sender: UIButton) {
-        
+        print("Delete Tapped")
     }
 }
